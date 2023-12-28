@@ -39,3 +39,11 @@ result <- mean(sqrt(abs(c(-5, 9, -12))))
 
 # Example with pipe operator
 result <- c(-5, 9, -12) |> abs() |> sqrt() |> mean()
+
+# `<-` Assignment operator
+x <- 10
+
+# `|>` Pipe operator (or %>%)
+df |> filter(Name == "Alice") |> select(Name, Age)
+select(filter(df, Name == "Alice"), Name, Age)
+# equivalent as:
